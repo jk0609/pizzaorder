@@ -35,6 +35,10 @@ $(document).ready(function(){
       toppingText = toppings.join(' and ');
     }
     else{
+      for(i=0;i<toppings.length-1;i++){
+        toppings[i] = toppings[i]+',';
+      }
+      console.log(toppings);
       toppings.splice(toppings.length-1,0,'and');
       toppingText = toppings.join(' ');
     }
@@ -45,5 +49,4 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-//commas
 });

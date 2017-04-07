@@ -1,39 +1,23 @@
-# Ping Pong (Week 3 Intro Project)
+# Pizza Order (Week 4 Intro Project)
 
 #### By Jonathon Kang
 
 ## Description
 
-Exercise in Javascript/jQuery with looping and arrays. User inputs a number and the page returns a list of numbers with multiples of 3, 5 and 15 replaced with different words. Can handle number inputs of any size, though anything above 3 digits is not recommended. Can reject non-number inputs and recognize commas and floating point numbers, though it will round them to the nearest integer.
+Exercise in Javascript/jQuery with object constructors and prototypes. A pizza object is dynamically created based on user size/topping inputs. A price value will also be dynamically created based on those inputs, with all values being shown to the user upon form submit.
 
 ## Specifications
-•	Rejects inputs with non-numeric characters.
-  o	Example Input: 2a!
-  o	Example Output: ‘Please enter a number’
-•	Can count up to the inputted number.
-  o	Example Input: 5
-  o	Example Output: [1,2,3,4,5]
-•	Can successfully replace multiples of 15 with ‘ping-pong’
-  o	Example Input: 30
-  o	Example Output:[1,2,3…,14,’ping-pong’,16…..28,29,’ping-pong’]
-•	Can successfully replace multiples of 5 (but not 15) with ‘pong’
-  o	Example Input: 10
-  o	Example Output:[1,2,3,4,’pong’,6…9,’pong’]
-•	Can successfully replace multiples of 3 (but not 15) with ‘ping’
-  o	Example Input: 6
-  o	Example Output: [1,2,’ping’,4,5,’ping’]
-•	Recognizes numbers with commas
-  o	Example Input: 2,000
-  o	Example Output: [1,2,3……1999,2000]
-•	Recognizes floating numbers and rounds to nearest integer
-  o	Example Input: 2.5
-  o	Example Output: [1,2,3]
+
+| Specs                                                                                                | Input                       | Output                                                                      |
+|------------------------------------------------------------------------------------------------------|-----------------------------|-----------------------------------------------------------------------------|
+| User can select a size and it will be show to them upon submit.                                      | 'Small'                     | 'You've ordered a small pizza with ...'                                     |
+| User can select toppings that will be shown upon submit.                                             | *Pepperoni *Olives          | 'You've ordered a ... pizza with pepperoni,olives.'                         |
+| User will be shown a final price dynamically calculated based on their size and toppings selections. | 'Small' *Pepperoni *Olives  | 'You've ordered a small pizza with pepperoni,olives. Your total is $14.00.' |
+| Receipt text with multiple toppings will display with correct grammar.                               | *Pepperoni *Olives *Sausage | '....pepperoni, olives and sausage.'                                        |
 
 ## Setup/Installation Requirements
 
 Clone the repository and open the index.html file in a browser of your choice. Make sure not to move any of the images or additional folders in the directory.
-
-Alternatively, visit https://jk0609.github.io/pingpong to see the current live version.
 
 ## Technologies Used
 

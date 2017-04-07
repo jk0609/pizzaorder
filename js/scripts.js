@@ -28,7 +28,10 @@ $(document).ready(function(){
 
     //converts toppings array into text string to be used in receipt. Adds receipt text string and shows to user.
     var toppingText = "";
-    if(toppings.length<=2){
+    if(toppings.length===0){
+      toppingText = 'no toppings';
+    }
+    else if(toppings.length<=2){
       toppingText = toppings.join(' and ');
     }
     else{
@@ -38,7 +41,9 @@ $(document).ready(function(){
     $('#receipt').show();
     $('#receiptText').text("You've ordered "+newPizza.sizeName+' pizza with '+toppingText+'. Your total is $'+newPizza.price+".");
 
+    $('form')[0].reset();
     event.preventDefault();
   });
 
+//commas
 });

@@ -13,10 +13,10 @@
     <form>
       <h3>Choose your size:</h3>
       <select id="size">
-        <option value="1">Small</option>
-        <option value="2">Medium</option>
-        <option value="3">Large</option>
-        <option value="4">Extra-Large</option>
+        <option value="1" name='a small'>Small</option>
+        <option value="2" name='a medium'>Medium</option>
+        <option value="3" name='a large'>Large</option>
+        <option value="4" name='an extra-large'>Extra-Large</option>
       </select>
 
       <h3>Choose your toppings:</h3>
@@ -37,6 +37,10 @@
 
       <button type='submit' class='btn btn-success'>Submit My Order</button>
     </form>
+  </div>
+  <div id='receipt'>
+    <h3>Thanks for your order!</h3>
+    <p id='receiptText'></p>
   </div>
 </body>
 
